@@ -10,11 +10,23 @@
 	--content-bg-color: #f8f1f1;
 	--app-padding: 25px 15px;
 	--app-border-radius: 15px;
+	--app-box-shadow: 0 0 10px black;
+	--app-items-border-radius: 30px;
 }
 
 body {
 	background: var(--main-bg-color);
 	background-attachment: fixed;
+}
+
+a {
+	text-decoration: none;
+	color: #000511;
+}
+
+a:hover {
+	color: #3c455a;
+	text-decoration-line: none;
 }
 
 .container {
@@ -24,15 +36,107 @@ body {
 .row {
 	height: 90vh;
 }
-.app__sidebar {
+
+/* Sidebar */
+.sidebar {
 	background-color: var(--content-bg-color);
 	height: 100%;
 	border-radius: var(--app-border-radius);
 	padding: var(--app-padding);
+	box-shadow: var(--app-box-shadow);
+	text-align: center;
 }
 
+.sidebar__avatar {
+	height: 110px;
+	width: 110px;
+	object-fit: contain;
+	border-radius: 100%;
+}
+
+.sidebar__name {
+	font-family: Kaushan Script;
+	cursor: default;
+	font-size: 1.5rem;
+	margin: 20px 0;
+}
+
+.sidebar__name > span {
+	color: #072a7a;
+}
+
+.sidebar__item {
+	margin-bottom: 6px;
+	padding-top: 6px;
+	height: 40px;
+	font-size: 1rem;
+	border-radius: var(--app-items-border-radius);
+}
+
+.sidebar__icon {
+	width: 25px;
+	height: 25px;
+}
+
+.sidebar__title {
+	background-color: #e0e3eb;
+	border-radius: var(--app-items-border-radius);
+	cursor: default;
+}
+
+.sidebar__contact {
+	background-color: #e0e3eb;
+	padding: 2px 0;
+	border-radius: var(--app-border-radius);
+	margin-top: 6px;
+	cursor: default;
+}
+
+.sidebar_email {
+	font-size: 0.9rem;
+}
+
+.sidebar__send-email {
+	background: linear-gradient(
+		90deg,
+		rgba(32, 27, 115, 1) 0%,
+		rgba(127, 127, 218, 1) 23%,
+		rgba(0, 212, 255, 1) 100%
+	);
+	border-radius: var(--app-items-border-radius);
+	color: #fff;
+	margin-top: 6px;
+	transition: all 0.4s linear;
+}
+
+.sidebar__send-email:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.sidebar__resume:hover {
+	background-color: #e0e3eb;
+	color: #000511;
+}
+
+.sidebar__github {
+	transition: all 0.2s linear;
+}
+
+.sidebar__github:hover {
+	transform: scale(1.3);
+}
+
+/* Main */
 .app__main-content {
 	background-color: var(--content-bg-color);
 	border-radius: var(--app-border-radius);
 	padding: var(--app-padding);
+	box-shadow: var(--app-box-shadow);
+}
+
+@media (max-width: 991px) {
+	.app__main-content {
+		margin: 30px 14px;
+	}
 }
