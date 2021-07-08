@@ -1,11 +1,22 @@
 import React from 'react'
+import { Sidebar } from './components/Sidebar'
+import { Main } from './Main'
 
-function App() {
+export const App = () => {
 	return (
 		<div className='App'>
-			<h1>Uff! Finally</h1>
+			<div className='container'>
+				<div className='row'>
+					<div className='col-lg-3'>
+						<div className='app__sidebar'>
+							<Sidebar />
+						</div>
+					</div>
+					<div className='col-lg-9 app__main-content'>
+						<Main />
+					</div>
+				</div>
+			</div>
 		</div>
 	)
 }
-
-export default App
