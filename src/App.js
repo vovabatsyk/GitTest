@@ -1,4 +1,5 @@
 import React from 'react'
+import { Navbar } from './components/Navbar'
 import { Sidebar } from './components/Sidebar'
 import { Main } from './Main'
 
@@ -11,7 +12,7 @@ export const App = () => {
 						<Sidebar />
 					</div>
 					<div className='col-lg-9 app__main-content'>
-						<Main />
+						<Navbar />
 					</div>
 				</div>
 			</div>
