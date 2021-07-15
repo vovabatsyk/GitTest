@@ -1,36 +1,49 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
-	const [active, setActive] = useState('About')
+	const [active, setActive] = useState('')
+	useEffect(() => {
+		let currentUrl = window.location.href
+		if (currentUrl.endsWith('/')) setActive('About')
+		else if (currentUrl.endsWith('/projects')) setActive('Projects')
+		else if (currentUrl.endsWith('resume')) setActive('Resume')
+	}, [active])
 
 	return (
 		<div className='navbar'>
 			<div className='navbar__active'>{active}</div>
 			<div className='navbar__items'>
 				{active !== 'About' && (
-					<div
-						className='navbar__item'
-						onClick={() => setActive('About')}
-					>
-						About
-					</div>
+					<Link to='/'>
+						<div
+							className='navbar__item'
+							onClick={() => setActive('About')}
+						>
+							About
+						</div>
+					</Link>
 				)}
 
 				{active !== 'Resume' && (
-					<div
-						className='navbar__item'
-						onClick={() => setActive('Resume')}
-					>
-						Resume
-					</div>
+					<Link to='resume'>
+						<div
+							className='navbar__item'
+							onClick={() => setActive('Resume')}
+						>
+							Resume
+						</div>
+					</Link>
 				)}
 				{active !== 'Projects' && (
-					<div
-						className='navbar__item'
-						onClick={() => setActive('Projects')}
-					>
-						Projects
-					</div>
+					<Link to='projects'>
+						<div
+							className='navbar__item'
+							onClick={() => setActive('Projects')}
+						>
+							Projects
+						</div>
+					</Link>
 				)}
 			</div>
 		</div>

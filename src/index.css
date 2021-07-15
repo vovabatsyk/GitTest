@@ -29,6 +29,7 @@ a {
 
 a:hover {
 	color: #3c455a;
+	-webkit-text-decoration-line: none;
 	text-decoration-line: none;
 }
 
@@ -46,6 +47,7 @@ a:hover {
 	height: 100%;
 	border-radius: var(--app-border-radius);
 	padding: var(--app-padding);
+	-webkit-box-shadow: var(--app-box-shadow);
 	box-shadow: var(--app-box-shadow);
 	text-align: center;
 }
@@ -53,6 +55,7 @@ a:hover {
 .sidebar__avatar {
 	height: 110px;
 	width: 110px;
+	-o-object-fit: contain;
 	object-fit: contain;
 	border-radius: 100%;
 }
@@ -102,6 +105,20 @@ a:hover {
 }
 
 .sidebar__send-email {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(rgba(32, 27, 115, 1)),
+		color-stop(23%, rgba(127, 127, 218, 1)),
+		to(rgba(0, 212, 255, 1))
+	);
+	background: -o-linear-gradient(
+		left,
+		rgba(32, 27, 115, 1) 0%,
+		rgba(127, 127, 218, 1) 23%,
+		rgba(0, 212, 255, 1) 100%
+	);
 	background: linear-gradient(
 		90deg,
 		rgba(32, 27, 115, 1) 0%,
@@ -111,29 +128,39 @@ a:hover {
 	border-radius: var(--app-items-border-radius);
 	color: #fff;
 	margin-top: 6px;
+	-webkit-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
 	transition: all 0.4s linear;
 }
 
 .sidebar__send-email:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
 	transform: scale(1.1);
 	cursor: pointer;
 }
 
 .sidebar__resume:hover {
-	background-color: #e0e3eb;
+	background-color: var(--app-color-grey);
 	color: #000511;
 }
 
 .sidebar__github {
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 }
 
 .sidebar__github:hover {
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
 	transform: scale(1.3);
 }
 
 /* Navbar */
 .navbar__items {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -151,7 +178,7 @@ a:hover {
 	color: var(--app-color-black);
 	font-size: 1.3rem;
 	cursor: pointer;
-	padding: 5px;
+	padding: 5px 10px;
 }
 
 .navbar__item:hover {
@@ -164,6 +191,7 @@ a:hover {
 	background-color: var(--content-bg-color);
 	border-radius: var(--app-border-radius);
 	padding: var(--app-padding);
+	-webkit-box-shadow: var(--app-box-shadow);
 	box-shadow: var(--app-box-shadow);
 }
 
