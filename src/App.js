@@ -2,8 +2,7 @@ import React from 'react'
 import {
 	BrowserRouter as Router,
 	Redirect,
-	Route,
-	Switch
+	Route
 } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import { Sidebar } from './components/Sidebar'
@@ -15,8 +14,8 @@ export const App = () => {
 	return (
 		<Router>
 			<div className='App'>
-				<div className='container'>
-					<div className='row'>
+				<div className='container app__container'>
+					<div className='row app__row'>
 						<div className='col-lg-3'>
 							<Sidebar />
 						</div>
