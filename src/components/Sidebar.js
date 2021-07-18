@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import {sidebar_variants} from '../services/motion-variants'
+import { sidebar_variants } from '../services/motion-variants'
 import facebook from '../assets/icons/facebook.svg'
 import linkedin from '../assets/icons/linkedin.svg'
 import github from '../assets/icons/github.svg'

@@ -3,7 +3,7 @@ import { data_projects } from '../data/data'
 import { generateKey } from '../services/key-generator'
 import { Project } from './Project'
 import { motion } from 'framer-motion'
-import {load_variants} from '../services/motion-variants'
+import { load_variants } from '../services/motion-variants'
 
 export const Projects = () => {
 	const [projects, setProjects] = useState(data_projects)
@@ -14,8 +14,6 @@ export const Projects = () => {
 		)
 		setProjects(data)
 	}
-
-
 
 	return (
 		<div className='container projects'>

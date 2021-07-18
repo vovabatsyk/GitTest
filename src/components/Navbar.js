@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import {navbar_variants} from '../services/motion-variants'
+import { navbar_variants } from '../services/motion-variants'
 
 export const Navbar = () => {
 	const [active, setActive] = useState('')
