@@ -46,9 +46,7 @@ import engine  from '../assets/projects_images/engine.jpg'
 import game_box  from '../assets/projects_images/game-box.jpg'
 import sage_book  from '../assets/projects_images/sage-book.jpg'
 import task  from '../assets/projects_images/task.jpg'
-
-
-
+import itstep_bot  from '../assets/projects_images/itstep-telegram.jpg'
 
 export const skills = [{
         icon: computer,
@@ -220,6 +218,14 @@ export const data_projects = [
         github_url: 'https://vovabatsyk.github.io/transport-department/',
         technology: 'Javascript',
         category:['web']
+    },
+    {
+        name: 'ItStep Bot',
+        image: itstep_bot,
+        deployed_url: '',
+        github_url: 'https://github.com/vovabatsyk/ItStepBot',
+        technology: 'TelegramBot/C#',
+        category:['other']
     },
     {
         name: 'Todo App',
