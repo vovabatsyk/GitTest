@@ -1,4 +1,6 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+import {sidebar_variants} from '../services/motion-variants'
 import facebook from '../assets/icons/facebook.svg'
 import linkedin from '../assets/icons/linkedin.svg'
 import github from '../assets/icons/github.svg'
@@ -13,7 +15,12 @@ export const Sidebar = () => {
 	}
 
 	return (
-		<div className='sidebar'>
+		<motion.div
+			className='sidebar'
+			variants={sidebar_variants}
+			initial='hidden'
+			animate='visible'
+		>
 			<img src={avatar} alt='avatar' className='sidebar__avatar' />
 			<div className='sidebar__name'>
 				Volodymyr <span>Batsyk</span>
@@ -34,6 +41,7 @@ export const Sidebar = () => {
 				<a
 					href='https://www.facebook.com/vovabatsyk/'
 					target='_blank'
+					rel='noopener noreferrer'
 				>
 					<img
 						src={facebook}
@@ -44,6 +52,7 @@ export const Sidebar = () => {
 				<a
 					href='https://www.linkedin.com/in/volodymyr-batsyk-081497151/'
 					target='_blank'
+					rel='noopener noreferrer'
 				>
 					<img
 						src={linkedin}
@@ -55,7 +64,11 @@ export const Sidebar = () => {
 
 			<div className='sidebar__contact'>
 				<div className='sidebar__item sidebar__github'>
-					<a href='https://github.com/vovabatsyk' target='_blank'>
+					<a
+						href='https://github.com/vovabatsyk'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
 						<img
 							src={github}
 							alt='github'
@@ -78,6 +91,6 @@ export const Sidebar = () => {
 			>
 				email me
 			</div>
-		</div>
+		</motion.div>
 	)
 }
