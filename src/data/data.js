@@ -449,8 +449,8 @@ export const data_projects = [
     {
         name: 'Elastic search',
         image: default_img,
-        deployed_url: 'https://github.com/vovabatsyk/elastic-search',
-        github_url: 'https://vovabatsyk.github.io/elastic-search/',
+        deployed_url: 'https://vovabatsyk.github.io/elastic-search/',
+        github_url: 'https://github.com/vovabatsyk/elastic-search',
         technology: 'Javascript',
         category:['web']
     },
