@@ -1,10 +1,18 @@
 import React from 'react'
 import { languages, tools } from '../data/data'
 import { Bar } from './Bar'
+import { motion } from 'framer-motion'
 import { generateKey } from '../services/key-generator'
+import { load_variants } from '../services/motion-variants'
 
 export const Resume = () => (
-	<div className='container resume'>
+	<motion.div
+		className='container resume'
+		variants={load_variants}
+		initial='hidden'
+		animate='visible'
+		exit='exit'
+	>
 		<div className='row'>
 			<div className='col-lg-6 resume-card'>
 				<h4 className='resume-card__heading'>Education</h4>
@@ -61,5 +69,5 @@ export const Resume = () => (
 				</div>
 			</div>
 		</div>
-	</div>
+	</motion.div>
 )
