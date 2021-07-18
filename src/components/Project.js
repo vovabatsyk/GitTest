@@ -8,7 +8,7 @@ export const Project = ({
 		<div className='projectCard my-2     col-md-6 col-lg-4'>
 			<figure className='projectCard__wrapper'>
 				<a
-					href={deployed_url == '' ? github_url : deployed_url}
+					href={deployed_url === '' ? github_url : deployed_url}
 					target='_blank'
 					rel='noopener noreferrer'
 				>
