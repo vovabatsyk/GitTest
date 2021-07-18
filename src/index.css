@@ -42,13 +42,13 @@ code {
 }
 
 .app__row {
-	height: 90vh;
+	height: 100%;
 }
 
 /* Sidebar */
 .sidebar {
 	background-color: var(--content-bg-color);
-	height: 100%;
+	height: fit-content;
 	border-radius: var(--app-border-radius);
 	padding: var(--app-padding);
 	-webkit-box-shadow: var(--app-box-shadow);
@@ -123,12 +123,7 @@ code {
 		rgba(127, 127, 218, 1) 23%,
 		rgba(0, 212, 255, 1) 100%
 	);
-	background: linear-gradient(
-		90deg,
-		rgba(32, 27, 115, 1) 0%,
-		rgba(127, 127, 218, 1) 23%,
-		rgba(0, 212, 255, 1) 100%
-	);
+	background-image: var(--main-bg-color);
 	border-radius: var(--app-items-border-radius);
 	color: #fff;
 	margin-top: 6px;
@@ -247,6 +242,62 @@ code {
 
 .skill-card__content {
 	margin: 0;
+	font-size: 0.9rem;
+}
+
+/* Resume */
+.resume {
+	padding-top: 20px;
+}
+
+.resume-card__heading {
+	margin-left: 10px;
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: var(--app-color-blue);
+}
+
+.resume-card__body {
+	margin: 20px 0 20px 0;
+	background-color: var(--app-color-grey);
+	padding: 10px;
+	border-radius: var(--app-border-radius);
+	text-align: center;
+}
+
+.resume-card__title {
+	font-weight: 700;
+}
+
+.resume-card__date {
+	font-weight: 300;
+	font-size: 0.8rem;
+	margin-bottom: 0;
+}
+
+.resume-language_heading {
+	color: var(--app-color-blue);
+}
+
+/* Bar */
+
+.bar {
+	width: 100%;
+	background-color: var(--app-color-grey);
+	border-radius: var(--app-items-border-radius);
+	margin-bottom: 12px;
+}
+
+.bar__icon {
+	width: 20px;
+	height: 20px;
+}
+
+.bar__wrapper {
+	background-image: var(--main-bg-color);
+	border-radius: var(--app-items-border-radius);
+	padding: 4px 14px;
+	color: var(--content-bg-color);
 	font-size: 0.9rem;
 }
 
