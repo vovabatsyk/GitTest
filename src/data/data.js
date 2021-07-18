@@ -457,8 +457,8 @@ export const data_projects = [
     {
         name: 'Game Box',
         image: game_box,
-        deployed_url: 'https://github.com/vovabatsyk/game-box',
-        github_url: 'https://vovabatsyk.github.io/game-box/',
+        deployed_url: 'https://vovabatsyk.github.io/game-box/',
+        github_url: 'https://github.com/vovabatsyk/game-box/',
         technology: 'Javascript',
         category:['web']
     },
