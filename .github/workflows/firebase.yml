@@ -26,32 +26,33 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - name: npm install, run build and test
+    - run: npm install -g yarn
+    - name: yarn install, build and test
       run: |
-        npm install
-        npm run build
+        yarn install
+        yarn run build
     - name: Archive Build
-    users: actions/upload-artifact@v2
-    with:
-      name: build
-      path: build
-    deploy:
-      name: Deploy
-      needs: build
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - name: Download Build
-          uses: actions/download-artifact@v2
-          with:
-            name: build
-            path: build
-        - name: Deploy to Firebase
-          uses: w9jds/firebase-action@master
-          with:
-            args: deploy --only hosting
-          env:
-            FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
-            
-    
+      uses: actions/upload-artifact@v2
+      with:
+        name: build
+        path: build
+        
+      deploy:
+        name: Deploy
+        needs: build
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v2
+          - name: Download Build
+            uses: actions/download-artifact@v2
+            with:
+              name: build
+              path: build
+          - name: Deploy to Firebase
+            uses: w9jds/firebase-action@master
+            with:
+              args: deploy --only hosting
+            env:
+              FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
+
+
