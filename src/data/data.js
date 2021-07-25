@@ -47,425 +47,440 @@ import game_box  from '../assets/projects_images/game-box.jpg'
 import sage_book  from '../assets/projects_images/sage-book.jpg'
 import task  from '../assets/projects_images/task.jpg'
 import itstep_bot  from '../assets/projects_images/itstep-telegram.jpg'
+import expenses from '../assets/projects_images/expenses.jpg'
 
-export const skills = [{
-        icon: computer,
-        title: 'Frontend Development',
-        about: 'I can build a beautiful and scalable SPA using React, Angular or Vue'
-    },
-    {
-        icon: repair,
-        title: 'Backend Development',
-        about: 'handle database, server, api using and Microsoft SQL Server'
-    },
-    {
-        icon: api,
-        title: 'API Development',
-        about: 'I can develop web API using ASP.NET Core'
-    },
-    {
-        icon: computer,
-        title: 'Desktop App',
-        about: 'I can create desktop app using WPF and Windows Forms'
-    },
-    {
-        icon: mobile,
-        title: 'Mobile Development',
-        about: 'I use Flutter to develop applications for mobile devices'
-    },
-    {
-        icon: programmer,
-        title: 'Competitive Coder',
-        about: 'a daily problem solver in HackerRank and Leetcode'
-    }
+export const skills = [
+	{
+		icon: computer,
+		title: 'Frontend Development',
+		about:
+			'I can build a beautiful and scalable SPA using React, Angular or Vue'
+	},
+	{
+		icon: repair,
+		title: 'Backend Development',
+		about:
+			'handle database, server, api using and Microsoft SQL Server'
+	},
+	{
+		icon: api,
+		title: 'API Development',
+		about: 'I can develop web API using ASP.NET Core'
+	},
+	{
+		icon: computer,
+		title: 'Desktop App',
+		about: 'I can create desktop app using WPF and Windows Forms'
+	},
+	{
+		icon: mobile,
+		title: 'Mobile Development',
+		about: 'I use Flutter to develop applications for mobile devices'
+	},
+	{
+		icon: programmer,
+		title: 'Competitive Coder',
+		about: 'a daily problem solver in HackerRank and Leetcode'
+	}
 ]
 
-export const languages = [{
-        icon: html,
-        name: 'HTML',
-        level: '75'
-    },
-    {
-        icon: css,
-        name: 'CSS',
-        level: '75'
-    },
-    {
-        icon: javascript,
-        name: 'Javascript',
-        level: '70'
-    },
-    {
-        icon: react,
-        name: 'React',
-        level: '75'
-    },
-    {
-        icon: angular,
-        name: 'Angular',
-        level: '65'
-    },
-    {
-        icon: vue,
-        name: 'Vue',
-        level: '70'
-    },
+export const languages = [
+	{
+		icon: html,
+		name: 'HTML',
+		level: '75'
+	},
+	{
+		icon: css,
+		name: 'CSS',
+		level: '75'
+	},
+	{
+		icon: javascript,
+		name: 'Javascript',
+		level: '70'
+	},
+	{
+		icon: react,
+		name: 'React',
+		level: '75'
+	},
+	{
+		icon: angular,
+		name: 'Angular',
+		level: '65'
+	},
+	{
+		icon: vue,
+		name: 'Vue',
+		level: '70'
+	},
 
-    {
-        icon: cpp,
-        name: 'C++',
-        level: '55'
-    },
-    {
-        icon: csharp,
-        name: 'C#',
-        level: '75'
-    },
-    {
-        icon: asp,
-        name: 'Asp.Net',
-        level: '75'
-    },
-    {
-        icon: computer,
-        name: 'WPF',
-        level: '75'
-    },
-    {
-        icon: db,
-        name: 'SQL',
-        level: '75'
-    },
-    {
-        icon: computer,
-        name: 'Windows Forms',
-        level: '75'
-    },
-    {
-        icon: flutter,
-        name: 'Dart/Flutter',
-        level: '60'
-    }
+	{
+		icon: cpp,
+		name: 'C++',
+		level: '55'
+	},
+	{
+		icon: csharp,
+		name: 'C#',
+		level: '75'
+	},
+	{
+		icon: asp,
+		name: 'Asp.Net',
+		level: '75'
+	},
+	{
+		icon: computer,
+		name: 'WPF',
+		level: '75'
+	},
+	{
+		icon: db,
+		name: 'SQL',
+		level: '75'
+	},
+	{
+		icon: computer,
+		name: 'Windows Forms',
+		level: '75'
+	},
+	{
+		icon: flutter,
+		name: 'Dart/Flutter',
+		level: '60'
+	}
 ]
 
-export const tools = [{
-        icon: git,
-        name: 'Git/GitHub'
-    },
-    {
-        icon: db,
-        name: 'Entity Framefork'
-    },
-    {
-        icon: repair,
-        name: 'Mvc'
-    },
-    {
-        icon: redux,
-        name: 'Redux'
-    },
-    {
-        icon: db,
-        name: 'T-sql'
-    },
-    {
-        icon: vue,
-        name: 'Vuex'
-    },
-    {
-        icon: chrome,
-        name: 'Chrome dev tools'
-    },
-    {
-        icon: box,
-        name: 'Webpack'
-    },
-    {
-        icon: repair,
-        name: 'MVVM'
-    },
-    {
-        icon: vscode,
-        name: 'VS Code'
-    },
-    {
-        icon: box,
-        name: 'Unit testing'
-    },
-    {
-        icon: api,
-        name: 'API Testing'
-    },
-    {
-        icon: box,
-        name: 'Design patterns'
-    }
+export const tools = [
+	{
+		icon: git,
+		name: 'Git/GitHub'
+	},
+	{
+		icon: db,
+		name: 'Entity Framefork'
+	},
+	{
+		icon: repair,
+		name: 'Mvc'
+	},
+	{
+		icon: redux,
+		name: 'Redux'
+	},
+	{
+		icon: db,
+		name: 'T-sql'
+	},
+	{
+		icon: vue,
+		name: 'Vuex'
+	},
+	{
+		icon: chrome,
+		name: 'Chrome dev tools'
+	},
+	{
+		icon: box,
+		name: 'Webpack'
+	},
+	{
+		icon: repair,
+		name: 'MVVM'
+	},
+	{
+		icon: vscode,
+		name: 'VS Code'
+	},
+	{
+		icon: box,
+		name: 'Unit testing'
+	},
+	{
+		icon: api,
+		name: 'API Testing'
+	},
+	{
+		icon: box,
+		name: 'Design patterns'
+	}
 ]
 
 export const data_projects = [
-    {
-        name: 'Resume',
-        image: resume,
-        deployed_url: 'https://vovabatsyk.github.io/resume/',
-        github_url: 'https://github.com/vovabatsyk/resume',
-        technology: 'Javascript',
-        category:['web']
-    },
-    {
-        name: 'Transport department',
-        image: transport,
-        deployed_url: 'https://parking-inspector.city-adm.lviv.ua/',
-        github_url: 'https://vovabatsyk.github.io/transport-department/',
-        technology: 'Javascript',
-        category:['web']
-    },
-    {
-        name: 'ItStep Bot',
-        image: itstep_bot,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/ItStepBot',
-        technology: 'TelegramBot/C#',
-        category:['other']
-    },
-    {
-        name: 'Todo App',
-        image: todo,
-        deployed_url: 'https://todo-391e7.web.app/',
-        github_url: 'https://github.com/vovabatsyk/ToDo',
-        technology: 'React',
-        category:['web']
-    },
-    {
-        name: 'Quiz App',
-        image: quiz,
-        deployed_url: 'https://react-quiz-8ac80.web.app/auth',
-        github_url: 'https://github.com/vovabatsyk/quiz',
-        technology: 'React',
-        category:['web']
-    },
-    {
-        name: 'Task Manager',
-        image: task,
-        deployed_url: 'https://github.com/vovabatsyk/TaskManager',
-        github_url: 'https://github.com/vovabatsyk/TaskManager',
-        technology: 'Windows Forms C#',
-        category:['desktop']
-    },
+	{
+		name: 'Expenses App',
+		image: expenses,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/expenses',
+		technology: 'React / Asp.Net Core',
+		category: ['web']
+	},
+	{
+		name: 'Resume',
+		image: resume,
+		deployed_url: 'https://vovabatsyk.github.io/resume/',
+		github_url: 'https://github.com/vovabatsyk/resume',
+		technology: 'Javascript',
+		category: ['web']
+	},
+	{
+		name: 'Transport department',
+		image: transport,
+		deployed_url: 'https://parking-inspector.city-adm.lviv.ua/',
+		github_url: 'https://vovabatsyk.github.io/transport-department/',
+		technology: 'Javascript',
+		category: ['web']
+	},
+	{
+		name: 'ItStep Bot',
+		image: itstep_bot,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/ItStepBot',
+		technology: 'TelegramBot/C#',
+		category: ['other']
+	},
+	{
+		name: 'Todo App',
+		image: todo,
+		deployed_url: 'https://todo-391e7.web.app/',
+		github_url: 'https://github.com/vovabatsyk/ToDo',
+		technology: 'React',
+		category: ['web']
+	},
+	{
+		name: 'Quiz App',
+		image: quiz,
+		deployed_url: 'https://react-quiz-8ac80.web.app/auth',
+		github_url: 'https://github.com/vovabatsyk/quiz',
+		technology: 'React',
+		category: ['web']
+	},
+	{
+		name: 'Task Manager',
+		image: task,
+		deployed_url: 'https://github.com/vovabatsyk/TaskManager',
+		github_url: 'https://github.com/vovabatsyk/TaskManager',
+		technology: 'Windows Forms C#',
+		category: ['desktop']
+	},
 
-    {
-        name: 'Login Form',
-        image: login,
-        deployed_url: 'https://vovabatsyk.github.io/login_dark/',
-        github_url: 'https://github.com/vovabatsyk/login_dark',
-        technology: 'HTML/CSS',
-        category:['web']
-    },
-    {
-        name: 'BMI Calculator',
-        image: bmi,
-        deployed_url: 'https://github.com/vovabatsyk/bmi_calculator',
-        github_url: 'https://github.com/vovabatsyk/bmi_calculator',
-        technology: 'Flutter',
-        category:['mobile']
-    },    
-    {
-        name: 'Sage Book',
-        image: sage_book,
-        deployed_url: 'https://github.com/vovabatsyk/SageBook',
-        github_url: 'https://github.com/vovabatsyk/SageBook',
-        technology: 'Windows Forms C#',
-        category:['desktop']
-    },
-    {
-        name: 'Trello',
-        image: trello,
-        deployed_url: 'https://trello-clone-vue.web.app/',
-        github_url: 'https://github.com/vovabatsyk/trello-app',
-        technology: 'Vue',
-        category:['web']
-    },
-    {
-        name: 'Finance CRM',
-        image: finance,
-        deployed_url: 'https://github.com/vovabatsyk/finance',
-        github_url: 'https://github.com/vovabatsyk/finance',
-        technology: 'Vue',
-        category:['web']
-    },
-    {
-        name: 'Notes App',
-        image: notes,
-        deployed_url: 'https://inspector-parking.web.app/',
-        github_url: 'https://github.com/vovabatsyk/department-of-transport',
-        technology: 'Vue',
-        category:['web']
-    },    
-    {
-        name: 'Dev Chat',
-        image: dev_chat,
-        deployed_url: 'https://github.com/vovabatsyk/chat-nuxt/',
-        github_url: 'https://github.com/vovabatsyk/chat-nuxt/',
-        technology: 'React',
-        category:['web']
-    },
-    {
-        name: 'Excel',
-        image: excel,
-        deployed_url: 'https://js-excel.web.app/',
-        github_url: 'https://github.com/vovabatsyk/excel',
-        technology: 'Javascript',
-        category:['web']
-    },
-    {
-        name: 'Resume CV',
-        image: cv,
-        deployed_url: 'https://vovabatsyk.github.io/homepage/',
-        github_url: 'https://github.com/vovabatsyk/homepage',
-        technology: 'HTML/CSS',
-        category:['web']
-    },
-    {
-        name: 'Login Form',
-        image: login2,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/LoginMVVM',
-        technology: 'WPF C#',
-        category:['desktop']
-    },
-    {
-        name: 'Login Form',
-        image: login3,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/LoginForm',
-        technology: 'WPF C#',
-        category:['desktop']
-    },
-    {
-        name: 'Wordpad',
-        image: default_img,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/WordPad',
-        technology: 'Windows Forms C#',
-        category:['desktop']
-    },
-    {
-        name: 'Tic-Tac-Toe',
-        image: default_img,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/Tic-Tac-Toe',
-        technology: 'WinApi C++',
-        category:['desktop']
-    },
-    {
-        name: 'SolarCoffee',
-        image: default_img,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/SolarCoffee',
-        technology: 'Vue/asp.net',
-        category:['web']
-    },
-    {
-        name: 'Company',
-        image: default_img,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/Company/',
-        technology: 'Asp.Net Core',
-        category:['web']
-    },
-    {
-        name: 'Beauty Salon',
-        image: salon,
-        deployed_url: 'https://vovabatsyk.github.io/euphoria/',
-        github_url: 'https://github.com/vovabatsyk/euphoria',
-        technology: 'HTML/Bootstrap',
-        category:['web']
-    },
-    {
-        name: 'Fitness App',
-        image: default_img,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/FitnessApp',
-        technology: 'Console App/C#',
-        category:['other']
-    },
-    {
-        name: 'Todo App',
-        image: default_img,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/ToDoList',
-        technology: 'WPF C#',
-        category:['desktop']
-    },
-    {
-        name: 'Police database',
-        image: police_db,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/ITStep-cpp6',
-        technology: 'Console C++',
-        category:['other']
-    },
-    {
-        name: 'Class Tree',
-        image: tree,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/ITStep-cpp5',
-        technology: 'Console C++',
-        category:['other']
-    },
-    {
-        name: 'Class SinglyLinkedList',
-        image: linked_list,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/ITStep-cpp4',
-        technology: 'Console C++',
-        category:['other']
-    },
-    {
-        name: 'Class Stack',
-        image: stack,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/ITStep-cpp3',
-        technology: 'Console C++',
-        category:['other']
-    },
-    {
-        name: 'Class String',
-        image: string_img,
-        deployed_url: '',
-        github_url: 'https://github.com/vovabatsyk/ITStep-cpp2',
-        technology: 'Console C++',
-        category:['other']
-    },
-    {
-        name: 'Gallery Cards',
-        image: gallery,
-        deployed_url: 'https://vovabatsyk.github.io/gallery-cards/',
-        github_url: 'https://github.com/vovabatsyk/gallery-cards',
-        technology: 'Javascript',
-        category:['web']
-    },
-    {
-        name: 'Engine Audio',
-        image: engine,
-        deployed_url: 'https://vovabatsyk.github.io/engine-audio/',
-        github_url: 'https://github.com/vovabatsyk/engine-audio',
-        technology: 'Javascript',
-        category:['web']
-    },
-    {
-        name: 'Elastic search',
-        image: default_img,
-        deployed_url: 'https://vovabatsyk.github.io/elastic-search/',
-        github_url: 'https://github.com/vovabatsyk/elastic-search',
-        technology: 'Javascript',
-        category:['web']
-    },
-    {
-        name: 'Game Box',
-        image: game_box,
-        deployed_url: 'https://vovabatsyk.github.io/game-box/',
-        github_url: 'https://github.com/vovabatsyk/game-box/',
-        technology: 'Javascript',
-        category:['web']
-    },
+	{
+		name: 'Login Form',
+		image: login,
+		deployed_url: 'https://vovabatsyk.github.io/login_dark/',
+		github_url: 'https://github.com/vovabatsyk/login_dark',
+		technology: 'HTML/CSS',
+		category: ['web']
+	},
+	{
+		name: 'BMI Calculator',
+		image: bmi,
+		deployed_url: 'https://github.com/vovabatsyk/bmi_calculator',
+		github_url: 'https://github.com/vovabatsyk/bmi_calculator',
+		technology: 'Flutter',
+		category: ['mobile']
+	},
+	{
+		name: 'Sage Book',
+		image: sage_book,
+		deployed_url: 'https://github.com/vovabatsyk/SageBook',
+		github_url: 'https://github.com/vovabatsyk/SageBook',
+		technology: 'Windows Forms C#',
+		category: ['desktop']
+	},
+	{
+		name: 'Trello',
+		image: trello,
+		deployed_url: 'https://trello-clone-vue.web.app/',
+		github_url: 'https://github.com/vovabatsyk/trello-app',
+		technology: 'Vue',
+		category: ['web']
+	},
+	{
+		name: 'Finance CRM',
+		image: finance,
+		deployed_url: 'https://github.com/vovabatsyk/finance',
+		github_url: 'https://github.com/vovabatsyk/finance',
+		technology: 'Vue',
+		category: ['web']
+	},
+	{
+		name: 'Notes App',
+		image: notes,
+		deployed_url: 'https://inspector-parking.web.app/',
+		github_url:
+			'https://github.com/vovabatsyk/department-of-transport',
+		technology: 'Vue',
+		category: ['web']
+	},
+	{
+		name: 'Dev Chat',
+		image: dev_chat,
+		deployed_url: 'https://github.com/vovabatsyk/chat-nuxt/',
+		github_url: 'https://github.com/vovabatsyk/chat-nuxt/',
+		technology: 'React',
+		category: ['web']
+	},
+	{
+		name: 'Excel',
+		image: excel,
+		deployed_url: 'https://js-excel.web.app/',
+		github_url: 'https://github.com/vovabatsyk/excel',
+		technology: 'Javascript',
+		category: ['web']
+	},
+	{
+		name: 'Resume CV',
+		image: cv,
+		deployed_url: 'https://vovabatsyk.github.io/homepage/',
+		github_url: 'https://github.com/vovabatsyk/homepage',
+		technology: 'HTML/CSS',
+		category: ['web']
+	},
+	{
+		name: 'Login Form',
+		image: login2,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/LoginMVVM',
+		technology: 'WPF C#',
+		category: ['desktop']
+	},
+	{
+		name: 'Login Form',
+		image: login3,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/LoginForm',
+		technology: 'WPF C#',
+		category: ['desktop']
+	},
+	{
+		name: 'Wordpad',
+		image: default_img,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/WordPad',
+		technology: 'Windows Forms C#',
+		category: ['desktop']
+	},
+	{
+		name: 'Tic-Tac-Toe',
+		image: default_img,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/Tic-Tac-Toe',
+		technology: 'WinApi C++',
+		category: ['desktop']
+	},
+	{
+		name: 'SolarCoffee',
+		image: default_img,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/SolarCoffee',
+		technology: 'Vue/asp.net',
+		category: ['web']
+	},
+	{
+		name: 'Company',
+		image: default_img,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/Company/',
+		technology: 'Asp.Net Core',
+		category: ['web']
+	},
+	{
+		name: 'Beauty Salon',
+		image: salon,
+		deployed_url: 'https://vovabatsyk.github.io/euphoria/',
+		github_url: 'https://github.com/vovabatsyk/euphoria',
+		technology: 'HTML/Bootstrap',
+		category: ['web']
+	},
+	{
+		name: 'Fitness App',
+		image: default_img,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/FitnessApp',
+		technology: 'Console App/C#',
+		category: ['other']
+	},
+	{
+		name: 'Todo App',
+		image: default_img,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/ToDoList',
+		technology: 'WPF C#',
+		category: ['desktop']
+	},
+	{
+		name: 'Police database',
+		image: police_db,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/ITStep-cpp6',
+		technology: 'Console C++',
+		category: ['other']
+	},
+	{
+		name: 'Class Tree',
+		image: tree,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/ITStep-cpp5',
+		technology: 'Console C++',
+		category: ['other']
+	},
+	{
+		name: 'Class SinglyLinkedList',
+		image: linked_list,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/ITStep-cpp4',
+		technology: 'Console C++',
+		category: ['other']
+	},
+	{
+		name: 'Class Stack',
+		image: stack,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/ITStep-cpp3',
+		technology: 'Console C++',
+		category: ['other']
+	},
+	{
+		name: 'Class String',
+		image: string_img,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/ITStep-cpp2',
+		technology: 'Console C++',
+		category: ['other']
+	},
+	{
+		name: 'Gallery Cards',
+		image: gallery,
+		deployed_url: 'https://vovabatsyk.github.io/gallery-cards/',
+		github_url: 'https://github.com/vovabatsyk/gallery-cards',
+		technology: 'Javascript',
+		category: ['web']
+	},
+	{
+		name: 'Engine Audio',
+		image: engine,
+		deployed_url: 'https://vovabatsyk.github.io/engine-audio/',
+		github_url: 'https://github.com/vovabatsyk/engine-audio',
+		technology: 'Javascript',
+		category: ['web']
+	},
+	{
+		name: 'Elastic search',
+		image: default_img,
+		deployed_url: 'https://vovabatsyk.github.io/elastic-search/',
+		github_url: 'https://github.com/vovabatsyk/elastic-search',
+		technology: 'Javascript',
+		category: ['web']
+	},
+	{
+		name: 'Game Box',
+		image: game_box,
+		deployed_url: 'https://vovabatsyk.github.io/game-box/',
+		github_url: 'https://github.com/vovabatsyk/game-box/',
+		technology: 'Javascript',
+		category: ['web']
+	}
 ]
