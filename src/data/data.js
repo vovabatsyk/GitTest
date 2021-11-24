@@ -13,12 +13,12 @@ import vue from '../assets/icons/vue.svg'
 import javascript from '../assets/icons/javascript.svg'
 import asp from '../assets/icons/asp.svg'
 import db from '../assets/icons/db.svg'
-import flutter from '../assets/icons/flutter.svg'
 import git from '../assets/icons/github.svg'
 import chrome from '../assets/icons/chrome.svg'
 import vscode from '../assets/icons/studio-code.svg'
 import redux from '../assets/icons/redux.svg'
 import box from '../assets/icons/codepen.svg'
+import php from '../assets/icons/php.png'
 
 import bmi from '../assets/projects_images/bmi.jpg'
 import dev_chat from '../assets/projects_images/live-chat.jpg'
@@ -48,6 +48,8 @@ import sage_book  from '../assets/projects_images/sage-book.jpg'
 import task  from '../assets/projects_images/task.jpg'
 import itstep_bot  from '../assets/projects_images/itstep-telegram.jpg'
 import expenses from '../assets/projects_images/expenses.jpg'
+import organizer from '../assets/projects_images/organizer.png'
+import web_task_manager from '../assets/projects_images/web-task-manager.png'
 
 export const skills = [
 	{
@@ -147,9 +149,9 @@ export const languages = [
 		level: '75'
 	},
 	{
-		icon: flutter,
-		name: 'Dart/Flutter',
-		level: '60'
+		icon: php,
+		name: 'PHP',
+		level: '65'
 	}
 ]
 
@@ -214,7 +216,15 @@ export const data_projects = [
 		image: expenses,
 		deployed_url: '',
 		github_url: 'https://github.com/vovabatsyk/expenses',
-		technology: 'React / Asp.Net Core',
+		technology: 'React/Asp.Net Core',
+		category: ['web']
+	},
+	{
+		name: 'Web Task Manager',
+		image: web_task_manager,
+		deployed_url: '',
+		github_url: 'https://github.com/vovabatsyk/task-manager',
+		technology: 'MEAN Stack',
 		category: ['web']
 	},
 	{
@@ -242,14 +252,6 @@ export const data_projects = [
 		category: ['other']
 	},
 	{
-		name: 'Todo App',
-		image: todo,
-		deployed_url: 'https://todo-391e7.web.app/',
-		github_url: 'https://github.com/vovabatsyk/ToDo',
-		technology: 'React',
-		category: ['web']
-	},
-	{
 		name: 'Quiz App',
 		image: quiz,
 		deployed_url: 'https://react-quiz-8ac80.web.app/auth',
@@ -265,7 +267,14 @@ export const data_projects = [
 		technology: 'Windows Forms C#',
 		category: ['desktop']
 	},
-
+	{
+		name: 'Organizer',
+		image: organizer,
+		deployed_url: 'https://organizer-itstep.web.app/',
+		github_url: 'https://github.com/vovabatsyk/organizer',
+		technology: 'Javascript, Angular',
+		category: ['web']
+	},
 	{
 		name: 'Login Form',
 		image: login,
@@ -362,6 +371,14 @@ export const data_projects = [
 		github_url: 'https://github.com/vovabatsyk/WordPad',
 		technology: 'Windows Forms C#',
 		category: ['desktop']
+	},
+	{
+		name: 'Todo App',
+		image: todo,
+		deployed_url: 'https://todo-391e7.web.app/',
+		github_url: 'https://github.com/vovabatsyk/ToDo',
+		technology: 'React',
+		category: ['web']
 	},
 	{
 		name: 'Tic-Tac-Toe',
@@ -482,5 +499,6 @@ export const data_projects = [
 		github_url: 'https://github.com/vovabatsyk/game-box/',
 		technology: 'Javascript',
 		category: ['web']
-	}
+	}	,
+
 ]
